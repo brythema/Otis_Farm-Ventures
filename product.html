@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Otis Farm Venture</title>
+<meta name="description" content="Fresh catfish, poultry, eggs, cows and lambs from Otis Farm Venture, Abuja. Order in bulk or for the household.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.webp">
+</head>
+<body>
+
+<div id="curtain">
+  <div class="curtain-ring"></div>
+  <div class="curtain-mark"><img src="images/logo.webp" alt="" width="120" height="120"></div>
+</div>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.webp" alt="Otis Farm Venture logo" width="40" height="40">
+    <span class="nav-logo-txt">Otis Farm<span>Venture</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="btn btn-gold nav-cta">Order Now</a>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="products.html" class="active">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-gold mm-cta">Order Now</a>
+</div>
+
+<section class="about-hero page-fade" style="--hero-img:url('images/catfish.webp')">
+  <span class="eyebrow" style="justify-content:center">Full Catalog</span>
+  <h1>Fish, poultry &amp; livestock —<br>fresh from Piwoyi.</h1>
+  <p>Tap any item to open WhatsApp with your order pre-filled. Bulk pricing available on request.</p>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-in">
+    <div class="products-grid">
+
+      <div class="prod-card glass reveal" onclick="order('Eggs (Crates)')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/Fresh%20Eggs%20(Crates).webp" alt="Fresh eggs by the crate" loading="lazy" decoding="async"><div class="prod-badge">Best Seller</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Eggs (Crates)</div>
+          <div class="prod-desc">Fresh farm eggs, sold by the crate. Ask for our current rate.</div>
+          <a class="prod-cta"><span>Order Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="prod-card glass reveal rd1" onclick="order('Poultry Chickens')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/Poultry%20Chickens.webp" alt="Poultry chickens" loading="lazy" decoding="async"><div class="prod-badge">Bulk Available</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Poultry Chickens</div>
+          <div class="prod-desc">Healthy broilers &amp; layers. Bulk orders welcome, delivered live or dressed.</div>
+          <a class="prod-cta"><span>Order Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="prod-card glass reveal rd2" onclick="order('Catfish')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/catfish.webp" alt="Catfish" loading="lazy" decoding="async"><div class="prod-badge">Premium</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Catfish</div>
+          <div class="prod-desc">Large, healthy catfish raised in clean ponds. Sold fresh, per kg.</div>
+          <a class="prod-cta"><span>Order Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="prod-card glass reveal" onclick="order('Lambs')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/Lambs.webp" alt="Lambs" loading="lazy" decoding="async"><div class="prod-badge">Limited Stock</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Lambs</div>
+          <div class="prod-desc">Strong, well-fed lambs. Limited weekly availability — reserve early.</div>
+          <a class="prod-cta"><span>Order Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="prod-card glass reveal rd1" onclick="order('Cows')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/Cows.webp" alt="Cows" loading="lazy" decoding="async"><div class="prod-badge">Bulk Only</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Cows</div>
+          <div class="prod-desc">Quality cattle for serious bulk buyers, farms and processors.</div>
+          <a class="prod-cta"><span>Order Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="prod-card glass reveal rd2" onclick="order('Custom Bulk Enquiry')">
+        <div class="prod-img-wrap"><img class="prod-img" src="images/hero%20image.webp" alt="Farm produce" loading="lazy" decoding="async"><div class="prod-badge">Custom</div></div>
+        <div class="prod-body">
+          <div class="prod-title">Bulk / Custom Order</div>
+          <div class="prod-desc">Restaurant, hotel or event? Tell us your volume and schedule.</div>
+          <a class="prod-cta"><span>Enquire Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0; padding-bottom:100px;">
+  <div class="section-in">
+    <div class="cta-banner glass glass-gold reveal">
+      <h2>Not sure what you need?</h2>
+      <p>Send us a message on WhatsApp and we'll help you plan your order and delivery.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-gold">Go To Contact Form</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-lockup">
+        <img src="images/logo.webp" alt="Otis Farm Venture logo">
+        <div class="footer-brand-name">Otis Farm<span>Venture</span></div>
+      </div>
+      <p>Fish, poultry and livestock supplied fresh from our farm in Abuja — for households, restaurants and bulk buyers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+2348166568607">0816 656 8607</a>
+      <a href="mailto:Otisfarm70@gmail.com">Otisfarm70@gmail.com</a>
+      <p>Piwoyi Airport Road, Abuja, Nigeria</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Otis Farm Venture · All Rights Reserved</p>
+    <p>Fish · Poultry · Livestock · Abuja</p>
+    <p>Engineered by <a href="https://www.eee3.com.ng" target="_blank" rel="noopener">www.eee3.com.ng</a></p>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <a href="https://wa.me/2348166568607?text=Hello%20Otis%20Farm%20Venture%2C%20I%20want%20to%20make%20an%20order" target="_blank" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
