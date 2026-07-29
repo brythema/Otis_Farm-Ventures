@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Otis Farm Venture</title>
+<meta name="description" content="Place your order or enquiry with Otis Farm Venture — Piwoyi Airport Road, Abuja. Call 0816 656 8607 or message on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.webp">
+</head>
+<body>
+
+<div id="curtain">
+  <div class="curtain-ring"></div>
+  <div class="curtain-mark"><img src="images/logo.webp" alt="" width="120" height="120"></div>
+</div>
+
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.webp" alt="Otis Farm Venture logo" width="40" height="40">
+    <span class="nav-logo-txt">Otis Farm<span>Venture</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <a href="https://wa.me/2348166568607" target="_blank" class="btn btn-gold nav-cta">WhatsApp Us</a>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="https://wa.me/2348166568607" target="_blank" class="btn btn-gold mm-cta">WhatsApp Us</a>
+</div>
+
+<section class="about-hero page-fade" style="--hero-img:url('images/hero%20image.webp')">
+  <span class="eyebrow" style="justify-content:center">Get In Touch</span>
+  <h1>Place your order<br>or enquiry.</h1>
+  <p>Tell us what you need and we'll confirm availability and pricing — usually within the hour.</p>
+</section>
+
+<section class="section" style="padding-top:20px; padding-bottom:100px;">
+  <div class="section-in contact-grid">
+
+    <div class="contact-form-card glass reveal">
+      <h2>Send a Message</h2>
+      <p>Fill this in and it opens straight into WhatsApp with your details ready to send.</p>
+
+      <div class="hero-btns" style="margin-bottom:26px;">
+        <a href="https://wa.me/2348166568607?text=Hello%20Otis%20Farm%20Venture%2C%20I%20want%20to%20make%20an%20order" target="_blank" class="btn btn-gold">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="tel:+2348166568607" class="btn btn-glass">📞 Call Now</a>
+      </div>
+
+      <div class="cf-row">
+        <div class="cf-group">
+          <label>Full Name</label>
+          <input type="text" id="cfName" placeholder="Your name">
+        </div>
+        <div class="cf-group">
+          <label>Phone Number</label>
+          <input type="tel" id="cfPhone" placeholder="080 000 0000">
+        </div>
+      </div>
+      <div class="cf-group">
+        <label>Product Interest</label>
+        <select id="cfNeed">
+          <option value="" disabled selected>Select product</option>
+          <option>Eggs (Crates)</option>
+          <option>Poultry Chickens</option>
+          <option>Catfish</option>
+          <option>Lambs</option>
+          <option>Cows</option>
+          <option>Bulk / Custom Order</option>
+        </select>
+      </div>
+      <div class="cf-group">
+        <label>Message</label>
+        <textarea id="cfMsg" placeholder="Tell us your requirements — quantity, delivery date, location..."></textarea>
+      </div>
+      <button class="btn btn-gold btn-block cf-submit" onclick="sendContact()">Send Enquiry via WhatsApp</button>
+      <div class="cf-success" id="cfSuccess">✓ Redirecting to WhatsApp with your enquiry...</div>
+    </div>
+
+    <div class="info-stack">
+      <a class="info-card glass reveal rd1" href="https://wa.me/2348166568607" target="_blank">
+        <div class="info-ico">📞</div>
+        <div><div class="info-lbl">Phone / WhatsApp</div><div class="info-val">0816 656 8607</div></div>
+      </a>
+      <a class="info-card glass reveal rd2" href="mailto:Otisfarm70@gmail.com">
+        <div class="info-ico">✉️</div>
+        <div><div class="info-lbl">Email</div><div class="info-val">Otisfarm70@gmail.com</div></div>
+      </a>
+      <div class="info-card glass reveal rd3">
+        <div class="info-ico">📍</div>
+        <div><div class="info-lbl">Address</div><div class="info-val">Piwoyi Airport Road, Abuja, Nigeria</div></div>
+      </div>
+      <div class="map-embed glass reveal">
+        <iframe src="https://www.google.com/maps?q=Piwoyi+Airport+Road+Abuja+Nigeria&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Otis Farm Venture location map"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-lockup">
+        <img src="images/logo.webp" alt="Otis Farm Venture logo">
+        <div class="footer-brand-name">Otis Farm<span>Venture</span></div>
+      </div>
+      <p>Fish, poultry and livestock supplied fresh from our farm in Abuja — for households, restaurants and bulk buyers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+2348166568607">0816 656 8607</a>
+      <a href="mailto:Otisfarm70@gmail.com">Otisfarm70@gmail.com</a>
+      <p>Piwoyi Airport Road, Abuja, Nigeria</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Otis Farm Venture · All Rights Reserved</p>
+    <p>Fish · Poultry · Livestock · Abuja</p>
+    <p>Engineered by <a href="https://www.eee3.com.ng" target="_blank" rel="noopener">www.eee3.com.ng</a></p>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <a href="https://wa.me/2348166568607?text=Hello%20Otis%20Farm%20Venture%2C%20I%20want%20to%20make%20an%20order" target="_blank" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
