@@ -232,8 +232,8 @@ body.transitioning{ overflow:hidden; }
 
 .hero-bg{
   position:absolute; inset:0; z-index:0;
-  background:linear-gradient(180deg, rgba(10,15,11,.72) 0%, rgba(10,15,11,.86) 45%, var(--ink) 92%), url('images/hero%20image.webp') center/cover no-repeat;
-  filter:saturate(85%) brightness(.75);
+  background:linear-gradient(180deg, rgba(10,15,11,.55) 0%, rgba(10,15,11,.62) 45%, rgba(10,15,11,.88) 92%), url('images/hero%20image.webp') 75% center/cover no-repeat;
+  filter:saturate(90%) brightness(.9);
   transform:scale(1.08); opacity:0; transition:opacity 1.4s ease, transform 6s ease;
 }
 .hero-bg.loaded{ opacity:1; transform:scale(1); }
