@@ -448,6 +448,14 @@ body.transitioning{ overflow:hidden; }
 .footer-brand-name{ font-family:'Fraunces',serif; font-size:1.15rem; font-weight:600; }
 .footer-brand-name span{ display:block; font-size:.56rem; letter-spacing:3px; color:var(--gold); font-weight:700; text-transform:uppercase; margin-top:2px; font-family:'DM Sans',sans-serif; }
 .footer-brand p{ color:var(--fog); font-size:.85rem; line-height:1.8; max-width:320px; }
+.footer-social{ display:flex; gap:12px; margin-top:20px; }
+.footer-social a{
+  width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:var(--panel-2); border:1px solid var(--brd); transition:var(--fast);
+}
+.footer-social a:hover{ border-color:var(--brd-gold); background:rgba(139,190,86,.14); transform:translateY(-3px); }
+.footer-social svg{ width:17px; height:17px; fill:var(--fog); transition:var(--fast); }
+.footer-social a:hover svg{ fill:var(--gold); }
 .footer-col h4{ font-size:.66rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:16px; font-weight:700; font-family:'DM Sans',sans-serif; }
 .footer-col a, .footer-col p{ display:block; color:var(--fog); text-decoration:none; font-size:.85rem; margin-bottom:11px; transition:color var(--fast); }
 .footer-col a:hover{ color:var(--gold); }
