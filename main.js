@@ -1,7 +1,7 @@
 // =====================================================================
 // OTIS FARM VENTURE — shared behaviour across all pages
 // =====================================================================
-const WA_NUMBER = '2348166568607';
+const WA_NUMBER = '2348029920521';
 
 /* ---- navbar scroll state ---- */
 const nav = document.getElementById('mainNav');
